@@ -193,7 +193,7 @@
                     <span>أخوك الواطي: مش محتاج اعرف عن نفسي</span>
                     <br><br><br>
                     <img src="img/me.jpg" alt="img/me.jpg">
-                    <audio src="img/mus.MP3" id="audio" ></audio>
+                    <audio src="img/mus.MP3" id="audio" autoplay></audio>
                 </div>
             </div>
             <div class="col">
@@ -232,7 +232,7 @@
                 document.getElementById("timer").style.display = "none";
                 dataShow.style.display = "flex";
                 intr = setInterval(changeImage, 5000);
-                console.log(document.getElementById("audio").play())
+                document.getElementById("audio").play()
             }
         }, 1000);
         let intr;
